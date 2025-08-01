@@ -34,6 +34,6 @@ Within this event, you can manually fill the rectangle and draw the text for the
      }
  }
  ```
- ![OverridingSelectionStyle.png](OverridingSelectionStyle.png)
+ ![Overriding SelectionStyle](OverridingSelectionStyle.png)
 
 Take a moment to peruse the [WinForms DataGrid-Selection](https://help.syncfusion.com/windowsforms/datagrid/selection) documentation, to learn more about DataGrid Selections with examples.
