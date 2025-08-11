@@ -70,7 +70,7 @@ namespace SfDataGridDemo
             }
         }
 
-        private void OnQueryRowStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventArgs e)
+        private void OnQueryRowStyle(object sender, QueryRowStyleEventArgs e)
         {
             if (e.RowType == RowType.DefaultRow)
             {
