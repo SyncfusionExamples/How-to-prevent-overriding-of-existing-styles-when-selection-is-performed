@@ -22,6 +22,7 @@ namespace SfDataGridDemo
     public partial class Form1 : Form
     {
         public OrderInfoCollection collections;
+
         public Form1()
         {
             InitializeComponent();
@@ -61,6 +62,7 @@ namespace SfDataGridDemo
                 e.Handled = true;
             }
         }
+
         private void OnQueryRowStyle(object sender, Syncfusion.WinForms.DataGrid.Events.QueryRowStyleEventArgs e)
         {
             if (e.RowType == RowType.DefaultRow)

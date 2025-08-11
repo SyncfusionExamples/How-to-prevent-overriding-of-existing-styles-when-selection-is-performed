@@ -1,8 +1,8 @@
 # How to prevent overriding of existing styles when selection is performed in WinForms DataGrid?
 
-By default, in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid), when applying styles, the selection font color overrides the existing styles. However, the same font color style can be applied during selection by customizing the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event.
+By default, in [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid),  applying styles causes the selection font color to override existing styles. To maintain the same font color style during selection, customize the [DrawCell](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.SfDataGrid.html#Syncfusion_WinForms_DataGrid_SfDataGrid_DrawCell) event.
 
-Within this event, you can manually fill the rectangle and draw the text for the selected data rows with the required text color.
+Within this event, manually fill the rectangle and draw the text for the selected data rows with the required text color.
 
  ```csharp
 //Event subscription
