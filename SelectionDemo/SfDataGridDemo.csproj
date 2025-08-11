@@ -33,15 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Core.WinForms"/>
-    <Reference Include="Syncfusion.Data.WinForms"/>
-    <Reference Include="Syncfusion.DataSource.WinForms"/>
-    <Reference Include="Syncfusion.GridCommon.WinForms"/>
-    <Reference Include="Syncfusion.Licensing"/>
-    <Reference Include="Syncfusion.SfDataGrid.WinForms"/>
-    <Reference Include="Syncfusion.SfInput.WinForms"/>
-    <Reference Include="Syncfusion.SfListView.WinForms"/>
-    <Reference Include="Syncfusion.Shared.Base"/>
+    <Reference Include="Syncfusion.Core.WinForms" />
+    <Reference Include="Syncfusion.Data.WinForms" />
+    <Reference Include="Syncfusion.DataSource.WinForms" />
+    <Reference Include="Syncfusion.GridCommon.WinForms" />
+    <Reference Include="Syncfusion.Licensing" />
+    <Reference Include="Syncfusion.SfDataGrid.WinForms" />
+    <Reference Include="Syncfusion.SfInput.WinForms" />
+    <Reference Include="Syncfusion.SfListView.WinForms" />
+    <Reference Include="Syncfusion.Shared.Base" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
