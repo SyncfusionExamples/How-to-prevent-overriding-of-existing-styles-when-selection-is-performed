@@ -15,8 +15,9 @@ using Syncfusion.WinForms.Input;
 using Syncfusion.WinForms.DataGrid.Helpers;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;
+using Syncfusion.WinForms.DataGrid.Events;
 
-namespace SfDataGrid_Demo_4_8
+namespace SfDataGridDemo
 {
     public partial class Form1 : Form
     {
@@ -27,10 +28,12 @@ namespace SfDataGrid_Demo_4_8
             collections = new OrderInfoCollection();  
             sfDataGrid.DataSource = collections.Orders;
             sfDataGrid.QueryRowStyle += OnQueryRowStyle;
+            //Event subscription
             sfDataGrid.DrawCell += OnDrawCell;       
         }
-
-        private void OnDrawCell(object sender, Syncfusion.WinForms.DataGrid.Events.DrawCellEventArgs e)
+        
+        //Event customization
+        private void OnDrawCell(object sender, DrawCellEventArgs e)
         {
             if (e.DataRow == null || e.DataRow.RowData == null || sfDataGrid.SelectedItems == null || sfDataGrid.SelectedItems.Count < 0 || sfDataGrid.CurrentCell == null)
                 return;

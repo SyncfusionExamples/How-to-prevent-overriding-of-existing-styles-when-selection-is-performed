@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{47A3A676-950C-4C0A-AEC8-BEF43BFCA097}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SfDataGrid_Demo_4_8</RootNamespace>
-    <AssemblyName>SfDataGrid_Demo_4_8</AssemblyName>
+    <RootNamespace>SfDataGridDemo</RootNamespace>
+    <AssemblyName>SfDataGridDemo</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,15 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Core.WinForms" />
-    <Reference Include="Syncfusion.Data.WinForms" />
-    <Reference Include="Syncfusion.DataSource.WinForms" />
-    <Reference Include="Syncfusion.GridCommon.WinForms" />
-    <Reference Include="Syncfusion.Licensing" />
-    <Reference Include="Syncfusion.SfDataGrid.WinForms" />
-    <Reference Include="Syncfusion.SfInput.WinForms" />
-    <Reference Include="Syncfusion.SfListView.WinForms" />
-    <Reference Include="Syncfusion.Shared.Base" />
+    <Reference Include="Syncfusion.Core.WinForms"/>
+    <Reference Include="Syncfusion.Data.WinForms"/>
+    <Reference Include="Syncfusion.DataSource.WinForms"/>
+    <Reference Include="Syncfusion.GridCommon.WinForms"/>
+    <Reference Include="Syncfusion.Licensing"/>
+    <Reference Include="Syncfusion.SfDataGrid.WinForms"/>
+    <Reference Include="Syncfusion.SfInput.WinForms"/>
+    <Reference Include="Syncfusion.SfListView.WinForms"/>
+    <Reference Include="Syncfusion.Shared.Base"/>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -78,8 +78,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

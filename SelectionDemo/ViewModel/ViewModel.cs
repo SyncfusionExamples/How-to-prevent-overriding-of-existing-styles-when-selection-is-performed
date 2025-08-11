@@ -6,21 +6,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SfDataGrid_Demo_4_8
+namespace SfDataGridDemo
 {
     public class OrderInfoCollection
     {
         private ObservableCollection<OrderInfo> _orders;
+
         public ObservableCollection<OrderInfo> Orders
         {
             get { return _orders; }
             set { _orders = value; }
         }
+
         public OrderInfoCollection()
         {
             _orders = new ObservableCollection<OrderInfo>();
             this.GenerateOrders();
         }
+
         private void GenerateOrders()
         {
             _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));

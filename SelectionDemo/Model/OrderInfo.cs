@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace SfDataGrid_Demo_4_8
+namespace SfDataGridDemo
 {
     public class OrderInfo : INotifyPropertyChanged
     {
@@ -16,13 +16,6 @@ namespace SfDataGrid_Demo_4_8
         private string country;
         private string customerName;
         private string shippingCity;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
         [Display(Name = "Order ID")]
         public int OrderID
@@ -94,6 +87,11 @@ namespace SfDataGrid_Demo_4_8
             }
         }
 
+        public OrderInfo()
+        {
+
+        }
+
         public OrderInfo(int orderId, string customerName, string country, string customerId, string shipCity)
         {
             this.OrderID = orderId;
@@ -101,6 +99,13 @@ namespace SfDataGrid_Demo_4_8
             this.Country = country;
             this.CustomerID = customerId;
             this.ShipCity = shipCity;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

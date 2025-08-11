@@ -1,4 +1,4 @@
-﻿namespace SfDataGrid_Demo_4_8
+﻿namespace SfDataGridDemo
 {
     partial class Form1
     {
